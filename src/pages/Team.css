@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ @media only screen and (max-width: 820px){
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .profile-card{
+    margin: 0 5px;
+  }
+ }
+
+
+ .main{
+   width: 100%;
+   height: 80vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+ }
+ .profile-card{
+   width: 170px;
+   height: 170px;
+   background: #fff;
+   padding: 30px;
+   border-radius: 50%;
+   box-shadow: 0 0 22px #3336;
+   transition: .6s;
+   margin: auto;
+ }
+ .profile-card:hover{
+   border-radius: 10px;
+   height: 210px;
+ }
+ .profile-card .img{
+   width: 100%;
+   height: 100%;
+   transition: .6s;
+   /* z-index: 99; */
+ }
+ .profile-card:hover .img{
+   transform: translateY(-60px);
+ }
+ .img img{
+   width: 100%;
+   border-radius: 50%;
+   box-shadow: 0 0 22px #3336;
+   transition: .6s;
+ }
+ .profile-card:hover img{
+   border-radius: 10px;
+ }
+ .caption{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   text-align: center;
+   transform: translateY(-80px);
+   opacity: 0;
+   transition: .6s;
+ }
+ .profile-card:hover .caption{
+   opacity: 1;
+ }
+ .caption h3{
+   font-size: 21px;
+   color: rgb(16, 141, 141);
+ }
+ .caption p{
+   font-size: 16px;
+   color: black;
+   margin: 2px 0 9px 0;
+ }
+ .caption .social-links a{
+   color: #333;
+   margin-right: 8px;
+   font-size: 21px;
+   transition: .6s;
+ }
+ .social-links a:hover{
+   color: #0c52a1;
+ }
+.social-links>svg{
+  cursor: pointer;
+}
+ .h3.alex {
+  padding-left: 120px;
+ }
